@@ -1,6 +1,4 @@
-a1 = ['ice cream', 'mango', 'apple']
-other = ['mango']
-b = list(set(a1) - set(other))
-print(b)
+a = [1, 2, 5, 10, 80]
+b = sum(a)a + 10
 
 
