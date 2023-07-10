@@ -1,4 +1,7 @@
-a = [1, 2, 5, 10, 80]
-b = sum(a)a + 10
+class Person:
+    def __init__(self, name):
+        self.name = name
 
 
+p1 = Person('Gena')
+print(not p1)
