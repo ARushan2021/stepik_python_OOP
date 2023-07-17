@@ -21,12 +21,6 @@ class Deck:
     def __next__(self):
         if self.index >= len(self.cards):
             raise StopIteration
-        # letter = f"{self.cards[self.index].rank} {self.cards[self.index].suit}"
         letter = self.cards[self.index]
         self.index += 1
         return letter
-
-
-deck = Deck()
-for card in deck:
-    print(card)
