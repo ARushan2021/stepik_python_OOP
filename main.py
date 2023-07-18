@@ -29,26 +29,26 @@ for i in str3:
 
 print(lst1)
 
-# print(str3)
-#
-# y = list(str3)
-# print(y)
+print(str3)
 
-# for i in y:
-#     print(i)
-#
-# del y[10:13]
-# print(y)
-#
-# y.remove('E')
-# print(y)
-# y = str(y)
-# print(type(y))
-# y1 = ''
-# x1 = y1.join([str1, str2])
-# print(x1)
-# print(type(x1))
-#
-#
-# str4 = f'{str1}, {str2}, {str3}'
-# print(str4)
+y = list(str3)
+print(y)
+
+for i in y:
+    print(i)
+
+del y[10:13]
+print(y)
+
+y.remove('E')
+print(y)
+y = str(y)
+print(type(y))
+y1 = ''
+x1 = y1.join([str1, str2])
+print(x1)
+print(type(x1))
+
+
+str4 = f'{str1}, {str2}, {str3}'
+print(str4)
