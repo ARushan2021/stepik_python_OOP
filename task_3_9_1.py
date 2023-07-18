@@ -24,3 +24,8 @@ class Deck:
         letter = self.cards[self.index]
         self.index += 1
         return letter
+
+
+deck = Deck()
+for card in deck:
+    print(card)

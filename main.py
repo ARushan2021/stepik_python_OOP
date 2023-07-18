@@ -1,32 +1,54 @@
-class Card:
-    def __init__(self, rank, suit):
-        self.rank = rank
-        self.suit = suit
+x = [i for i in range(20) if i % 2 == 0]
 
-    def __str__(self):
-        return f'{self.rank} {self.suit}'
+print(x)
 
+x = []
+for i in range(20):
+    if i % 2 == 0:
+        x += [i]
 
-class Deck:
-    ranks = [str(n) for n in range(2, 11)] + list('JQKA')
-    suits = ['Clubs', 'Diamonds', 'Hearts', 'Spades']
+a = list('Hello World')
+print(a)
 
-    def __init__(self):
-        self.cards = [Card(rank, suit) for suit in self.suits for rank in self.ranks]
-
-    def __iter__(self):
-        self.index = 0
-        return self
-
-    def __next__(self):
-        if self.index >= len(self.cards):
-            raise StopIteration
-        # letter = f"{self.cards[self.index].rank} {self.cards[self.index].suit}"
-        letter = self.cards[self.index]
-        self.index += 1
-        return letter
+a.sort(key=str.lower, reverse=True)
+print(a)
 
 
-deck = Deck()
-for card in deck:
-    print(card)
+
+str1 = 'ERTETER'
+str2 = 'gdfgert'
+
+str3 = str1 + str2
+lst1 = []
+
+for i in str3:
+    if i in lst1:
+        continue
+    else:
+        lst1.append(i)
+
+print(lst1)
+
+# print(str3)
+#
+# y = list(str3)
+# print(y)
+
+# for i in y:
+#     print(i)
+#
+# del y[10:13]
+# print(y)
+#
+# y.remove('E')
+# print(y)
+# y = str(y)
+# print(type(y))
+# y1 = ''
+# x1 = y1.join([str1, str2])
+# print(x1)
+# print(type(x1))
+#
+#
+# str4 = f'{str1}, {str2}, {str3}'
+# print(str4)
