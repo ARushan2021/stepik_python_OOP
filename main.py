@@ -53,4 +53,4 @@ print(type(x1))
 str4 = f'{str1}, {str2}, {str3}'
 print(str4)
 
-# для примера
+# для примера ветка 2
