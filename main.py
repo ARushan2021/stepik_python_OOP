@@ -54,3 +54,4 @@ str4 = f'{str1}, {str2}, {str3}'
 print(str4)
 
 # для примера мастер ветка
+# commit
