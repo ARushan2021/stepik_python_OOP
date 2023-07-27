@@ -1,27 +1,31 @@
-class MethodOverriding:
-    def __init__(self):
-        x = X()
-        y = Y()
-        y.method_2()
-        x.method_1()
-        y.method_1()
-        x = y
-        x.method_1() # № 1
-        x.method_2() # № 2
+import json
+
+# a = str({'name': 'John Doe', 'age': 30, 'address': {'street': '123 Main St', 'city': 'Anytown', 'state': 'CA', 'zip_code': '12345'}})
+# d = json.dumps(eval(a), indent=4)
+# print(d)
 
 
-class X:
-    def method_1(self):
-        print("m1 ~ X")
+a = {
+    "name": "John Doe",
+    "age": 30,
+    "address": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "zip_code": "12345"
+    }
+}
 
+b = {
+    'name': 'John Doe',
+    'age': 30,
+    'address': {
+        'street': '123 Main St',
+        'city': 'Anytown',
+        'state': 'CA',
+        'zip_code': '12345'
+    }
+}
 
-class Y(X):
-    def method_1(self):
-        print("m1 ~ Y")
-
-    def method_2(self):
-        print("m2 ~ Y")
-
-
-MethodOverriding()
+assert a == b
 
